@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply h-full;
+  }
+
+  html,
+  body {
+    @apply h-full;
+    @apply select-none;
+    @apply font-mono antialiased text-white;
+    @apply overflow-hidden;
+    @apply bg-transparent;
+  }
+}
+
+.trasparancy {
+    /* background-color: #1f1f1fa6; */
+    /* background-color: #132740e3; */
+    background-color: #1b4a4eea;
+    border-radius: 12px;
+}
+
+header {
+  -webkit-app-region: drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 mt-10;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#555] rounded-md;
+}
